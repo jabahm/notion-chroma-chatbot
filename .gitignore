@@ -1,0 +1,5 @@
+__pycache__/
+venv/
+embeddings/
+chroma_data/
+.env

@@ -1,0 +1,8 @@
+langchain-community
+python-dotenv
+sentence-transformers
+chromadb==0.5.3
+streamlit==1.40.0
+transformers 
+accelerate 
+sentencepiece
