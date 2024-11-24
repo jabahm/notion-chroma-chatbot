@@ -1,4 +1,4 @@
-# Notion-Chroma Chatbot
+# Notion-Chroma-Chatbot
 
 A **Streamlit** chatbot application that integrates **Notion**, **ChromaDB**, and **LangChain**. The chatbot leverages pre-trained embedding models to enable users to query information efficiently from Notion databases.
 
@@ -56,4 +56,20 @@ Run the notion_to_chroma.ipynb notebook or convert it to a Python script. This w
 ```bash
 streamlit run app.py
 ```
+
+---
+
+## Using Docker
+You can containerize the application using the provided Dockerfile.
+
+### 1. Build the Docker Image
+```bash
+docker build -t notion-chroma-chatbot
+```
+### 2. Run the Docker Container
+```bash
+docker run -p 8501:8501 --env-file .env notion-chroma-chatbot
+```
+The chatbot will be accessible at http://localhost:8501.
+
 
