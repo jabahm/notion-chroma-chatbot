@@ -23,7 +23,7 @@ class ChromaChatBot:
             st.error(f"Error loading Chroma vectorstore: {e}")
             raise RuntimeError(f"Error loading Chroma vectorstore: {e}")
 
-    def search(self, query, top_k=2):
+    def search(self, query, top_k=1):
         """
         Search for relevant documents in the Chroma vectorstore based on the query.
         """
@@ -36,7 +36,7 @@ class ChromaChatBot:
             st.error(f"Error searching Chroma vectorstore: {e}")
             raise RuntimeError(f"Error searching Chroma vectorstore: {e}")
 
-    def stream_results(self, query, top_k=2):
+    def stream_results(self, query, top_k=1):
         """
         Stream search results dynamically.
         """
